@@ -1,0 +1,70 @@
+{
+  "contents": [
+    {
+      "passageContent": "It's the first question parents ask when their child is diagnosed with autism (自闭症). Will his future brothers or sisters have a higher risk of 1 _____ it, too? According to the largest study of siblings (兄弟姐妹) in families with autism, the answer is yes. Among 664 children who had at least one older sibling with the developmental disorder, the 2 _____ risk of autism was nearly 19%, 3 _____ higher than previous sibling-recurrence estimates that were anywhere from 3% to 10%. Kids with more than one older autistic sibling had an even higher risk of the disorder: 32%.The 4 _____ suggest that genes play a key role in autism risk. But they also hint that other environmental factors 5 _____ by siblings, like influences in the womb (子宫), may be important as well.On the 6 _____ of the findings, the researchers recommend that doctors closely 7 _____ younger siblings of autistic children to pick up any early signs of the disorder, 8 _____ an unusually large head or delayed language development and communication skills. Evidence suggests that early 9_____ and diagnosis of autism can help children take advantage of therapies that can treat some of its 10_____",
+      "trueAnswer": [
+        "developing",
+        "average",
+        "dramatically",
+        "results",
+        "shared",
+        "basis",
+        "monitor",
+        "including",
+        "detection",
+        "symptoms"
+      ],
+      "options": [
+        "common",
+        "results",
+        "consequently",
+        "basis",
+        "detection",
+        "monitor",
+        "symbols",
+        "average",
+        "dramatically",
+        "symptoms",
+        "reason",
+        "distributed",
+        "including",
+        "developing",
+        "shared"
+      ],
+      "reason":["第1题","第2题","第3题","第4题","第5题","第6题","第7题","第8题","第9题","第10题"]
+    },
+    {
+      "passageContent": "Years ago, doctors often said that pain was a normal part of life. In particular, when older patients 1 _____ of pain, they were told it was a natural part of aging and they would have to learn to live with it.Times have changed. Today, we take pain 2 _____. Indeed, pain is now considered the fifth vital sign, as important as blood pressure, temperature, breathing rate and pulse in3 _____ a person’s well-being. We know that chronic (慢性的) pain can disrupt (扰乱) a person’s life, causing problems that 4 _____ from missed work to depression.That’s why a growing number of hospitals now depend upon physicians who 5 _____ in pain medicine. Not only do we evaluate the cause of the pain, which can help us treat the pain better, but we also help provide comprehensive therapy for depression and other psychological and social 6 _____ related to chronic pain. Such comprehensive therapy often 7 _____ the work of social workers, psychiatrists (心理医生) and psychologists, as well as specialists in pain medicine.This modern _8 _____ for pain management has led to a wealth of innovative treatments which are more effective and with fewer side effects than ever before. Decades ago, there were only a 9 _____ number of drugs available, and many of them caused 10 _____ side effects in older people, including dizziness and fatigue. This created a double-edged sword: the medications helped relieve the pain but caused other problems that could be worse than the pain itself.",
+      "trueAnswer": [
+        "complained",
+        "seriously",
+        "determining",
+        "range",
+        "specialize",
+        "issues",
+        "involves",
+        "respect",
+        "limited",
+        "significant"
+      ],
+      "options": [
+        "result",
+        "involves",
+        "significant",
+        "range",
+        "relieved",
+        "issues",
+        "seriously",
+        "magnificent",
+        "limited",
+        "gravely",
+        "complained",
+        "respect",
+        "prompting",
+        "specialize",
+        "determining"
+      ],
+      "reason":["第1题","第2题","第3题","第4题","第5题","第6题","第7题","第8题","第9题","第10题"]
+    }
+  ]
+}

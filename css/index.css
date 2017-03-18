@@ -1,0 +1,494 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* ================
+   container style
+   ================ */
+.container {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* ================
+   header style
+   ================ */
+.header {
+    position: fixed;
+    width: 90%;
+    min-width: 288px;
+    height: 50px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #aaa;
+    z-index: 1;
+}
+
+/* 返回 */
+.header .back-pre-page {
+    position: relative;
+    margin: 16px 0 0 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #848484;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+.header .back-pre-page:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 22px;
+    border-top: 1px solid #848484;
+    top: 8px;
+    left: -3px;
+    transform: rotate(-45deg);
+}
+
+/* 交卷按钮 */
+
+.header .submit-result {
+    float: right;
+    margin: 10px 16px;
+    width: 65px;
+    height: 32px;
+    background: #f5f5f5;
+    color: #8e8e8e;
+    border: 1px solid #8e8e8e;
+    border-radius: 4px;
+}
+
+/* ==========
+   main style
+   ========== */
+.main {
+    position: relative;
+    padding: 10px 0 20px;
+    margin-bottom: 40px;
+    top: 50px;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    box-shadow: -7px -2px 7px #ccc inset;
+}
+
+/* title icono */
+.main .icono-main-title {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px 0 15px;
+    width: 12px;
+    height: 13px;
+    background: #717171;
+}
+
+.main .icono-main-title:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    border-top: 2px solid #717171;
+    top: -2px;
+    transform: rotate(-35deg);
+}
+
+.main .icono-main-title:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    border: 2px solid #717171;
+    border-bottom: none;
+    border-left: none;
+    top: -3px;
+    left: 3px;
+}
+
+/* title content */
+.main h2 {
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0 0;
+    height: 30px;
+    color: #717171;
+    line-height: 30px;
+}
+
+/*full-text style*/
+.main .full-text {
+    padding: 0 15px 20px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei", "SimHei", "SimSun", Arial, sans-serif;
+    color: #5c5c5c;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+/* blank style */
+
+.main .full-text .blank {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.main .full-text .blank:hover {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #74cdf4;
+    color: #fff;
+}
+
+.blank.selected {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #74cdf4;
+    color: #fff;
+    text-align: center;
+}
+
+span.blank.answered {
+    color: #74cdf4;
+}
+
+/* 正文DIV高度调节按钮 */
+.icono-reset-height {
+    top: 12px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.icono-reset-height,
+.icono-reset-height:before,
+.icono-reset-height:after {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background: #d2d2d2;
+}
+
+.icono-reset-height:before, .icono-reset-height:after {
+    content: '';
+    background: #d2d2d2;
+    top: -8px;
+}
+
+.icono-reset-height:after {
+    top: -22px;
+}
+
+/* question-num */
+.questions-num {
+    text-align: center;
+}
+
+.questions-num .num {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background: #d8d8d8;
+    border-radius: 4px;
+}
+
+.num.answered {
+    background: #74cdf4;
+}
+
+.num.selected:after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 5px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid #5d5d5d;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+/*选择题目后*/
+.selected {
+    background: #74cdf4;
+}
+
+/* ================
+   questions-option
+   ================ */
+.questions-option {
+    position: relative;
+    width: 80%;
+    /*margin: 20px auto;*/
+    margin: 20px 14%;
+}
+
+.questions-option .option {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    margin-left: -2px;
+}
+
+.questions-option .option:hover {
+    color: #74cdf4;
+}
+
+.disabled-option:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -20px;
+    width: 110%;
+    height: 100%;
+    background: transparent;
+    z-index: 100;
+}
+
+.option.selected {
+    background: #fff;
+}
+
+/*遮罩样式*/
+.shade {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 130%;
+    background: rgba(0, 0, 0, 0.69);
+    top: 50px;
+    z-index: 1000;
+}
+
+/* ============
+   交卷弹出框样式
+   ============ */
+/* 整体样式 */
+.report-card {
+    position: relative;
+    margin: 20px auto 0;
+    width: 90%;
+    height: 51%;
+    background: #fff;
+    box-shadow: 3px 3px 6px #444, -2px -2px 6px #444;
+}
+
+/* 报告头部样式 */
+.report-card .report-title {
+    position: relative;
+    padding: 20px;
+    font-size: 21px;
+    color: #717171;
+    text-align: center;
+    font-family: "宋体";
+    border-bottom: 2px solid #f1f1f1;
+}
+
+/* 报告主体-成绩样式 */
+.report-grade {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 80px;
+    color: #83dbfc;
+}
+
+.grade-desc {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    color: #bdbdbd;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* 答题报告题号样式 */
+.grade-num {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.grade-num li {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    margin: 10px 0 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.true-answer {
+    color: #83dbfc;
+}
+
+.false-answer {
+    color: #ff99b4;
+}
+
+/* 报告底部样式 */
+.report-footer {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-top: 2px solid #f1f1f1;
+}
+
+.footer-button {
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    height: 35px;
+    line-height: 35px;
+    background: #fff;
+    border: 1px solid #83dbfc;
+    border-radius: 20px;
+    color: #83dbfc;
+}
+
+.footer-button + .footer-button {
+    margin-left: 40px;
+}
+
+/* 解析部分内容样式 */
+.questions-parse {
+    position: relative;
+    display: none;
+    width: 90%;
+    margin: 0 10px;
+}
+
+.true-blank {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: #74cdf4;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.false-blank {
+    position: relative;
+    display: inline-block;
+}
+
+.false-blank del {
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+    height: 30px;
+    background: #e5e5e5;
+    text-align: center;
+    color: #ed7a86;
+    border-bottom: 1px solid #d0d0d0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.false-blank:after {
+    content: attr(data-answer);
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-left: 5px;
+    background-color: #74cdf4;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.gab-blank {
+    position: relative;
+    display: inline-block;
+}
+
+.gab-blank i {
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+    height: 30px;
+    text-align: center;
+    color: #ed7a86;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.gab-blank:after {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    content: attr(data-answer);
+    background-color: #74cdf4;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.questions-num i {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.true-num {
+    background: #74cdf4;
+}
+
+.false-num {
+    background: #ed7a86;
+}
+
+.questions-num #check-parse:after {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 5px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid #5d5d5d;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
